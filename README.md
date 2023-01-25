@@ -4,5 +4,5 @@
  
  </div>
 <p align="center">
-<img src="">
+<img src="https://github.com/barbmariana/SiteArtPop/blob/main/flex-e-grid-main/assets/img/SiteDesktop.png">
 </p>
