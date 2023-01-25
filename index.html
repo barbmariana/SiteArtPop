@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artpop Music Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="./flex-e-grid-main/assets/css/reset.css">
+    <link rel="stylesheet" href="./flex-e-grid-main/assets/css/estilo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalhoMenu"><i></i></button>
+        <img src="./flex-e-grid-main/assets/img/Artpoplog.png" class="cabecalhoLogo">
+        <p class="cabecalhoPerfil">Mariana Barbosa</p>
+        <button class="cabecalhoNotificacao"><i></i></button>
+    </header>
+    <nav class="menuLateral">
+        <img src="./flex-e-grid-main/assets/img/Artpoplog.png" class="menuLateralLogo">
+        <a href="#" class="menuLateral__link menuLateral__link--inicio menuLateral__link--ativo">Início</a>
+        <a href="#" class="menuLateral__link menuLateral__link--videos">Vídeos</a>
+        <a href="#" class="menuLateral__link menuLateral__link--fanart">FanArt</a>
+        <a href="#" class="menuLateral__link menuLateral__link--camisas">Camisas</a>
+        <a href="#" class="menuLateral__link menuLateral__link--noticias">Notícias</a>
+    </nav>
+    <main class="principal">
+        <h2 class="tituloPagina">Início</h2>
+        <article class="cartao cartao--destaque destaque-video">
+            <img src="/flex-e-grid-main/assets/img/flowersbanner.jpg" class="cartao__imagem cartao__imagem--mobile">
+            <img src="/flex-e-grid-main/assets/img/flowersbanner.jpg"  class="cartao__imagem cartao__imagem--desktop">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Clipes em destaque</p>
+                <h3 class="cartao__titulo">Flowers</h3>
+                <p class="cartao__perfil">Miley Cyrus</p>
+                <p class="cartao__info cartao__info--tempo">6 minutos</p>
+                <p class="cartao__info cartao__info--visualizacao">10mi visualizações</p>
+                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+            </div>
+        </article>
+        <article class="cartao cartao--recentes videos-recentes">
+            <h3 class="cartao__titulo">Clipes Recentes</h3>
+            <a href="#" class="cartao__link">Ver todos</a>
+            <ul class="cartaoLista">
+                <li class="cartaoItem">
+                    <img src="/flex-e-grid-main/assets/img/despechaRosalia.jpg" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Despecha</h4>
+                    <p class="cartao__item-perfil">Rosalia</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="/flex-e-grid-main/assets/img/despechaRosalia.jpg" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Despecha</h4>
+                    <p class="cartao__item-perfil">Rosalia</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="/flex-e-grid-main/assets/img/despechaRosalia.jpg" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Despecha</h4>
+                    <p class="cartao__item-perfil">Rosalia</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="/flex-e-grid-main/assets/img/despechaRosalia.jpg" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Despecha</h4>
+                    <p class="cartao__item-perfil">Rosalia</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="/flex-e-grid-main/assets/img/despechaRosalia.jpg" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Despecha</h4>
+                    <p class="cartao__item-perfil">Rosalia</p>
+                </li>
+            </ul>
+        </article>
+        <section class="secao secao-videos">
+            <h3 class="tituloSecao">Clipes mais vistos</h3>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/despechaRosalia.jpg" alt="Vídeo" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Rosalia</p>
+                    <h3 class="cartao__titulo">Despecha</h3>
+                    <p class="cartao__info cartao__info--tempo">5 min</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/despechaRosalia.jpg" alt="Vídeo" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Rosalia</p>
+                    <h3 class="cartao__titulo">Despecha</h3>
+                    <p class="cartao__info cartao__info--tempo">5 min</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/despechaRosalia.jpg" alt="Vídeo" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Rosalia</p>
+                    <h3 class="cartao__titulo">Despecha</h3>
+                    <p class="cartao__info cartao__info--tempo">5 min</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/despechaRosalia.jpg" alt="Vídeo" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Rosalia</p>
+                    <h3 class="cartao__titulo">Despecha</h3>
+                    <p class="cartao__info cartao__info--tempo">5 min</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+        </section>
+        <article class="cartao cartao--recentes produtos-recentes">
+            <h3 class="cartao__titulo">Clipes Recentes</h3>
+            <a href="#" class="cartao__link">Ver todos</a>
+            <ul class="cartaoLista">
+                <li class="cartaoItem">
+                    <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" alt="Thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Flowers</h4>
+                    <p class="cartao__item-perfil">Miley Cyrus</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" alt="Thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Flowers</h4>
+                    <p class="cartao__item-perfil">Miley Cyrus</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" alt="Thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Flowers</h4>
+                    <p class="cartao__item-perfil">Miley Cyrus</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" alt="Thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Flowers</h4>
+                    <p class="cartao__item-perfil">Miley Cyrus</p>
+                </li>
+                <li class="cartaoItem">
+                    <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" alt="Thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">Flowers</h4>
+                    <p class="cartao__item-perfil">Miley Cyrus</p>
+                </li>
+            </ul>
+        </article>
+        <article class="cartao cartao--destaque destaque-produtos">
+            <img src="./flex-e-grid-main/assets/img/despechaRosalia.jpg"  class="cartao__imagem cartao__imagem--mobile">
+            <img src="./flex-e-grid-main/assets/img/despechaRosalia.jpg"   class="cartao__imagem cartao__imagem--desktop">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Clipe em Destaque</p>
+                <h3 class="cartao__titulo">Despecha</h3>
+                <p class="cartao__perfil">Rosalia</p>
+                <p class="cartao__info cartao__info--tempo">5 min</p>
+                <p class="cartao__info cartao__info--visualizacao">7mi visualizações</p>
+                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+            </div>
+        </article>
+        <section class="secao secao-produtos">
+            <h3 class="tituloSecao">Clipes mais vistos</h3>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Miley Cyrus</p>
+                    <h3 class="cartao__titulo">Flowers</h3>
+                    <p class="cartao__info cartao__info--tempo">6 minutos</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Miley Cyrus</p>
+                    <h3 class="cartao__titulo">Flowers</h3>
+                    <p class="cartao__info cartao__info--tempo">6 minutos</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Miley Cyrus</p>
+                    <h3 class="cartao__titulo">Flowers</h3>
+                    <p class="cartao__info cartao__info--tempo">6 minutos</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="./flex-e-grid-main/assets/img/flowersbanner.jpg" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Miley Cyrus</p>
+                    <h3 class="cartao__titulo">Flowers</h3>
+                    <p class="cartao__info cartao__info--tempo">6 minutos</p>
+                    <button class="cartao__botao cartao__botao--play"></button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="./flex-e-grid-main/index.js"></script>
+</body>
+</html>

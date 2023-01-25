@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body {
+    background-color: rgb(228, 178, 178);
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFFFFF;
+}
+
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: .75s;
+}
+
+
+
+.menuLateralAtivo {
+    left: 0;
+    transition: .75s;
+}
+
+.menuLateralLogo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+
+
+
+.menuLateral__link {
+    height: 64px;
+    color: rgb(167, 130, 130);
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.menuLateral__link--ativo {
+    color: rgb(167, 58, 58);
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
+.menuLateral__link:hover{
+    color:red;
+}
+
+
+
+.menuLateral__link::before {
+    content: "\e900";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+
+
+.menuLateral__link--inicio::before {
+    content: "\e902";
+}
+
+
+.menuLateral__link--fanart::before {
+    content: "\e90a";
+}
+
+
+.menuLateral__link--noticias::before {
+    content: "\e903";
+}
+.menuLateral__link--videos::before {
+    content: "\e90e";
+}
+
+.menuLateral__link--camisas::before {
+    content: "\e900";
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .menuLateral {
+        position: static;
+        width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+}
+
+.tituloSecao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.principal {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.tituloPagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .principal {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "tituloPagina tituloPagina tituloPagina"
+            "destaque-video destaque-video videos-recentes"
+            "secao-videos secao-videos secao-videos"
+            "produtos-recentes destaque-produtos destaque-produtos"
+            "secao-produtos secao-produtos secao-produtos"       
+        ;
+        column-gap: 32px;
+        padding: 16px 60px;
+        grid-column: 2;
+    }
+
+    .tituloSecao {
+        grid-column: span 4;
+    }
+}
+
+.cartao {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgb(143, 80, 80);
+}
+
+.cartao__imagem--desktop {
+    display: none;
+    object-fit: cover;
+    object-position:top;
+
+    height: 400px;
+
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
+}
+
+.cartao__conteudo {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.cartao__destaque {
+    grid-column: span 2;
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartaoPerfil {
+    color: palevioletred;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao__info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.cartao__info--tempo::before {
+    content: "\e90c";
+    margin-right: 8px;    
+}
+
+.cartao__info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;    
+}
+
+.cartao__botao {
+    display: flex;
+    background-color: palevioletred;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    justify-self: flex-end;
+}
+
+.cartao__botao--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--destaque {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.cartao__botao--destaque::before {
+    margin-right: 8px;
+}
+
+.cartao--recentes {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao--destaque {
+        margin-bottom: 0;
+    }
+
+    .cartao__imagem--mobile {
+        display: none;
+    }
+
+    .cartao__imagem--desktop {
+        display: block;
+    }
+
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
+    .cartao--recentes {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        box-sizing: border-box;
+        align-self: flex-start;
+        row-gap: 24px;
+        width: 256px;
+        padding: 16px;
+    }
+
+    .cartao--recentes .cartao__titulo {
+        grid-column: auto;
+    }
+
+    .cartao__link {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: pink;
+        justify-self: flex-end;
+    }
+    
+    .cartaoLista {
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 2;
+    }
+
+    .cartaoItem {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+
+    .cartao__item-thumbnail {
+        width: 32px;
+        grid-row: span 2;
+    }
+
+    .cartao__item-titulo {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+
+    .cartao__item-perfil {
+        font-size: 0.8rem;
+        color: #95999C;
+    }
+}
+
+.secao {
+    display: grid;
+    gap: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .secao {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+    
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+    
+    .secao-videos {
+        grid-area: secao-videos;
+    }
+    
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+    }
+    
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+    
+    .secao-produtos {
+        grid-area: secao-produtos;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.cabecalhoMenu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalhoNotificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+}
+
+.cabecalhoLogo {
+    width: 40px;
+}
+
+.cabecalhoPerfil {
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        background-color: pink;
+        display: grid;
+        column-gap: 32px;
+        grid-template-columns: 1fr auto;
+        padding: 16px 60px;
+        height: 80px;
+        box-sizing: border-box;
+        grid-column: 2;
+    }
+
+    .cabecalhoMenu {
+        display: none;
+    }
+
+    .cabecalhoLogo {
+        display: none;
+    }
+
+    .cabecalhoPerfil {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-end;
+        color: palevioletred;
+        padding: 8px 32px;
+        border-right: 1px solid #95999C;
+    }
+
+    .cabecalhoPerfil::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/mariana.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .cabecalhoPerfil::after {
+        content: "\e90d";
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+}
