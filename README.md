@@ -1,5 +1,5 @@
 # Site ArtPop
- Music website homepage using CSS Grid and Flexbox - Alura Course.
+ Creating a music website homepage using CSS Grid and Flexbox - Alura Course.
  
  # How?
  Created this homepage using CSS's Grid and Flexbox with an inicial template from Alura course named "CSS: dispondo elementos com flexbox e grid". At this course, I've learned different CSS's displays and how to use them.
